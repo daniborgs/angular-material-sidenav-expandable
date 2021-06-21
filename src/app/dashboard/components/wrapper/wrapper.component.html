@@ -2,9 +2,13 @@
   <mat-sidenav #sidenav mode="side" opened="true">
     <mat-nav-list>
 
-      <mat-list-item>
-        <mat-icon mat-list-icon class="chevron-button sidenav-button" (click)="isExpanded = !isExpanded" [ngClass]="{'rotated': isExpanded}">chevron_right</mat-icon>
+      <mat-list-item (click)="isExpanded = !isExpanded">
+        <mat-icon mat-list-icon class="">menu</mat-icon>
+        <mat-icon mat-list-icon class="chevron-button sidenav-button" [ngClass]="{'rotated': isExpanded}">chevron_right</mat-icon>
       </mat-list-item>
+      <!-- <mat-list-item>
+        <mat-icon mat-list-icon class="chevron-button sidenav-button" (click)="isExpanded = !isExpanded" [ngClass]="{'rotated': isExpanded}">chevron_right</mat-icon>
+      </mat-list-item> -->
 
       <mat-list-item [routerLink]="'dashboard'">
         <mat-icon mat-list-icon >home</mat-icon>
